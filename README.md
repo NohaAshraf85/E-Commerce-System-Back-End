@@ -57,4 +57,40 @@ Upon opening Visual Studio Code (VSC), right click on the `<server.js>` file and
 
 To check the database that has been created open MySQL Workbench and check the database and its associated tables for testing.
 
+The above steps are illustrated below:
+![Demo](./assets/start.gif)
+
+Once the Database is created and all the tables of the database are seeded with the columns and rows required, we can turn our attention to the capability that provides the user with the ability to add, update and delete items in the database usign Command Lines. The following sections provides more information about the routes in the solution and how to test them.
+
+### Categories
+
+### Products
+
+### Tags
+
+## License
+![APM](https://img.shields.io/apm/l/README)
+
+## Badges
+
+![javaScript](https://img.shields.io/badge/JavaScript-100%25-blue)
+![Node](https://img.shields.io/badge/Node.js-CLI-blue)
+![dotenv](https://img.shields.io/badge/dotenv-npm%20package-blue)
+![express](https://img.shields.io/badge/express-npm%20package-blue)
+![mysql2](https://img.shields.io/badge/mysql2-npm%20package-blue)
+![sequelize](https://img.shields.io/badge/sequelize-npm%20package-blue)
+
+## Contributing 
+
+To contribute to this project, please make sure you follow the guidelines in [The Contributor Covenant](https://www.contributor-covenant.org/) as general guidelines.
+Kindly maintain the highest ethics and respect. For further questions or requests kindly contact me through my [Email](mailto:noha_ashraf85@hotmail.com) or [GitHub](https://github.com/NohaAshraf85).
+
+## Tests 
+The E-Commerce applicaiotn can be tested through Insomnia to make sure that all the routes work as intended and the final results of adding, updating or deleting can be visually seen on MySQL Workbench.
+
+## Questions
+For any questions, please contact me through [GitHub](https://github.com/NohaAshraf85) 
+or [Email](mailto:noha_ashraf85@hotmail.com)
+
+
 
