@@ -62,7 +62,8 @@ router.put('/:id', async (req, res) => {
       {category_name: req.body.category_name},
       {returning: true, where: {id: req.params.id}}
     )
-    res.status(200).json(categoriesData);
+    console.log(categoriesData);
+    res.status(200).json(categoriesData[1]);
   }
   catch (err) {
     res.status(400).json(err);

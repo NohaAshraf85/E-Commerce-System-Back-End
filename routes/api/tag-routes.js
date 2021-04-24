@@ -59,7 +59,7 @@ router.put('/:id', async (req, res) => {
       {tag_name: req.body.tag_name},
       {returning: true, where: {id: req.params.id}}
     )
-    res.status(200).json(tagsData);
+    res.status(200).json(tagsData[1]);
   }
   catch (err) {
     res.status(400).json(err);
