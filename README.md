@@ -58,11 +58,30 @@ Upon opening Visual Studio Code (VSC), right click on the `<server.js>` file and
 To check the database that has been created open MySQL Workbench and check the database and its associated tables for testing.
 
 The above steps are illustrated below:
+
 ![Demo](./assets/start.gif)
+
+[Video Demo of how to create the database and seed it](https://drive.google.com/file/d/1oi5evi56O8dKTofxzmg4ShTG0d8kZZ36/view)
 
 Once the Database is created and all the tables of the database are seeded with the columns and rows required, we can turn our attention to the capability that provides the user with the ability to add, update and delete items in the database usign Command Lines. The following sections provides more information about the routes in the solution and how to test them.
 
 ### Categories
+A Category in the applicaiton has many Products and to test it you need to find the correct routes unger the `<routes>` folder in the `<category-routes.js>` file.
+
+The Category-routes file includes routes that provides the user with the ability to:
+
+Category | Rout/path | Method on Insomnia | Notes
+---------|------|--------------------|------
+Find All | http://localhost:3001/api/categories/| GET | 
+Find category by id | http://localhost:3001/api/categories/1| GET | change the number 1 in the rout/path to another id based ont he category id you wish to view
+Create a new category | http://localhost:3001/api/categories/| POST | The format of the category to be added should follow this example format {"category_name": "Basketball"}
+Update category | http://localhost:3001/api/categories/6 | | PUT | Udating a category uses the category id, to update a category you should add the category id to the rout/path and then provide the update you need, it should follow the following this example format {"category_name": "Piano"}
+Delete category | http://localhost:3001/api/categories/6 | DELETE | Deleting a category uses the category id, so to delete one you need to add the category id to the rout/path
+
+![Demo](./assets/category.gif)
+
+[Video Demo of how to test the routes for the category](https://drive.google.com/file/d/1Mqr3PZ8iaSQ9o42ReBQEc8-kMEyTZWVO/view)
+
 
 ### Products
 
