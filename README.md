@@ -2,7 +2,7 @@
 ## Description
 The E-Commerce application is a CLI application that helps online retails companies to create, update and delete database of their inventory and be competitive in the market. 
 
-For a full demo of the application: [E-Commerce Back-End System](https://drive.google.com/file/d/1ZQTasIiX3VVxoBg3gymtuy4YHCeta4NF/view)
+For a full demo of the application: [E-Commerce Back-End System](https://onedrive.live.com/?authkey=%21APOLrHMJf2WRUXU&cid=94D7DD44014D02AC&id=94D7DD44014D02AC%21347242&parId=94D7DD44014D02AC%21347241&o=OneUp)
 
 ## Table of Contents
 
