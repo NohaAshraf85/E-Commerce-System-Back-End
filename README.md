@@ -94,7 +94,11 @@ Get All  | http://localhost:3001/api/products/ | GET |
 Get all by id | http://localhost:3001/api/products/1 | GET | change the number 1 in the rout/path to another id based on the product id you wish to view
 Create a new Product | http://localhost:3001/api/products/ | POST | The format of the object to be added should follow the following {product_name: "Basketball", price: 200.00, stock: 3, tagIds: [1, 2, 3, 4]} 
 Update Product | http://localhost:3001/api/products/6 | PUT | To update a product add the id number of the product you want to update to the path and type the updates in the following format {product_name: "Basketball", price: 200.00, stock: 3, tagIds: [1, 2, 3, 4]}
-Delete Product | http://localhost:3001/api/products/6 | DELETE | To delete a Product use the id at the end of the path of the Product you want to delete
+Delete Product | http://localhost:3001/api/products/6 | DELETE | To delete a Product use the id at the end of the path of the Product you want to delete.
+
+![Demo](./assets/product.gif)
+
+[Video Demo of how to test the routes for the Product](https://drive.google.com/file/d/1Yb5IYRjDYZxIm5IRh376c_Qsy9okpprG/view)
 
 ### Tags
 
@@ -109,6 +113,10 @@ Get all by id | http://localhost:3001/api/tgs/1 | GET | change the number 1 in t
 Create a new Tag | http://localhost:3001/api/tags/ | POST | The format of the object to be added should follow the following {"tag_name": "Hello","tagId": 4} 
 Update Tag | http://localhost:3001/api/tags/6 | PUT | To update a tag add the id number of the Tag you want to update to the path and type the updates in the following format {"tag_name": "Hello World","tagId": 4}
 Delete Tag | http://localhost:3001/api/tags/6 | DELETE | To delete a Tag use the id at the end of the path of the Tag you want to delete
+
+![Demo](./assets/tags.gif)
+
+[Video Demo of how to test the routes for the Tag](https://drive.google.com/file/d/1tNIhx_oN165_TVFgzzGbgSPcq9X2W_zn/view)
 
 ## License
 ![APM](https://img.shields.io/apm/l/README)
