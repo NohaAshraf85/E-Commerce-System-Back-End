@@ -66,26 +66,49 @@ The above steps are illustrated below:
 Once the Database is created and all the tables of the database are seeded with the columns and rows required, we can turn our attention to the capability that provides the user with the ability to add, update and delete items in the database usign Command Lines. The following sections provides more information about the routes in the solution and how to test them.
 
 ### Categories
-A Category in the applicaiton has many Products and to test it you need to find the correct routes unger the `<routes>` folder in the `<category-routes.js>` file.
+A Category in the applicaiton has many Products and to test it you need to find the correct routes under the `<routes>` folder in the `<category-routes.js>` file.
 
 The Category-routes file includes routes that provides the user with the ability to:
 
-Category | Rout/path | Method on Insomnia | Notes
----------|------|--------------------|------
-Find All | http://localhost:3001/api/categories/| GET | 
-Find category by id | http://localhost:3001/api/categories/1| GET | change the number 1 in the rout/path to another id based ont he category id you wish to view
+Action | Rout/path | Method on Insomnia | Notes
+---------|-----------|--------------------|------
+Get All | http://localhost:3001/api/categories/| GET | 
+Get category by id | http://localhost:3001/api/categories/1| GET | change the number 1 in the rout/path to another id based on the category id you wish to view
 Create a new category | http://localhost:3001/api/categories/| POST | The format of the category to be added should follow this example format {"category_name": "Basketball"}
-Update category | http://localhost:3001/api/categories/6 | | PUT | Udating a category uses the category id, to update a category you should add the category id to the rout/path and then provide the update you need, it should follow the following this example format {"category_name": "Piano"}
+Update category | http://localhost:3001/api/categories/6 | PUT | Udating a category uses the category id, to update a category you should add the category id to the rout/path and then provide the update you need, it should follow the following this example format {"category_name": "Piano"}
 Delete category | http://localhost:3001/api/categories/6 | DELETE | Deleting a category uses the category id, so to delete one you need to add the category id to the rout/path
+
 
 ![Demo](./assets/category.gif)
 
 [Video Demo of how to test the routes for the category](https://drive.google.com/file/d/1Mqr3PZ8iaSQ9o42ReBQEc8-kMEyTZWVO/view)
 
-
 ### Products
+A Product in the application belongs to a Category and a Category has many Product models. A Product also belongs to many Tag models.
+
+To test and use the Procuct routes you need to find the correct routes under the `<routes>` folder in the `<product-routes.js>` file.
+
+Action | Rout/path | Method on Insomnia | Notes
+---------|-----------|--------------------|------
+Get All  | http://localhost:3001/api/products/ | GET |
+Get all by id | http://localhost:3001/api/products/1 | GET | change the number 1 in the rout/path to another id based on the product id you wish to view
+Create a new Product | http://localhost:3001/api/products/ | POST | The format of the object to be added should follow the following {product_name: "Basketball", price: 200.00, stock: 3, tagIds: [1, 2, 3, 4]} 
+Update Product | http://localhost:3001/api/products/6 | PUT | To update a product add the id number of the product you want to update to the path and type the updates in the following format {product_name: "Basketball", price: 200.00, stock: 3, tagIds: [1, 2, 3, 4]}
+Delete Product | http://localhost:3001/api/products/6 | DELETE | To delete a Product use the id at the end of the path of the Product you want to delete
 
 ### Tags
+
+A Tag belongs to many Tag models and a Tag belongs to many Product models, where a product is allowed ot have multiple Tags and Tags to have many Products by using the Product-Tag model
+
+To test and use the Tag routes you need to find the correct routes under the `<routes>` folder in the `<tag-routes.js>` file.
+
+Action | Rout/path | Method on Insomnia | Notes
+---------|-----------|--------------------|------
+Get All  | http://localhost:3001/api/tags/ | GET |
+Get all by id | http://localhost:3001/api/tgs/1 | GET | change the number 1 in the rout/path to another id based on the tag id you wish to view, in this case you will get multiple Products as a product can have many tag id's
+Create a new Tag | http://localhost:3001/api/tags/ | POST | The format of the object to be added should follow the following {"tag_name": "Hello","tagId": 4} 
+Update Tag | http://localhost:3001/api/tags/6 | PUT | To update a tag add the id number of the Tag you want to update to the path and type the updates in the following format {"tag_name": "Hello World","tagId": 4}
+Delete Tag | http://localhost:3001/api/tags/6 | DELETE | To delete a Tag use the id at the end of the path of the Tag you want to delete
 
 ## License
 ![APM](https://img.shields.io/apm/l/README)
